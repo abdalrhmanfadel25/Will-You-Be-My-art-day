@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My art day?</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Basbosa, would you like to make our own Art Day?</h1>
+        <!-- Hidden form for EmailJS -->
+        <form id="yes-form" style="display:none;">
+            <input type="hidden" name="message" value="she said yeeaahh!">
+        </form>
+        <div class="buttons">
+            <button class="yes-button" id="yes-button" type="button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+        </div>
+        <div id="confirmation-message" style="display:none; margin-top:20px; color:green; font-weight:bold;">
+            Thank you! Your response has been sent.
+        </div>
+    </div>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("BUwhaxZToFehfd2eq"); // Replace with your EmailJS user ID
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

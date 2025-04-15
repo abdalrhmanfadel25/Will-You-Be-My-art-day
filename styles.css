@@ -1,0 +1,64 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffe0ec 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #d72660;
+}
+
+.buttons {
+    margin-bottom: 1.5rem;
+}
+
+.yes-button, .no-button {
+    font-size: 1.1rem;
+    padding: 0.7rem 2.2rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.yes-button {
+    background: #d72660;
+    color: #fff;
+}
+
+.yes-button:hover {
+    background: #a81d4c;
+}
+
+.no-button {
+    background: #f7b2ad;
+    color: #d72660;
+}
+
+.no-button:hover {
+    background: #f38181;
+    color: #fff;
+}
+
+.gif_container img {
+    width: 180px;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+}
